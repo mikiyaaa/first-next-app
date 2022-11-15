@@ -5,6 +5,11 @@ import Headline from '../components/Headline'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  const handleClick = () => {
+    alert("clicked now!!");
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +19,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Headline page="index" code={<code className={styles.code}>pages/index.js</code>} />
+        <Headline page="index" onClick={handleClick}>
+          <code className={styles.code}>pages/index.js</code>
+        </Headline>
         <Contents />
       </main>
 
