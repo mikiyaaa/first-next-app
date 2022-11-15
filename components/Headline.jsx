@@ -9,8 +9,7 @@ const Headline = ( props ) => {
                 <a href="https://nextjs.org">{props.page} Page</a>
             </h1>
             <p className={styles.description}>
-                Get started by editing{' '}
-                {props.children}
+                Get started by editing {props.children}
             </p>
             <button onClick={props.onClick}>Click Here!!</button>
         </div>

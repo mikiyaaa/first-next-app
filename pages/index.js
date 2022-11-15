@@ -1,14 +1,10 @@
 import Head from 'next/head'
-import Contents from '../components/Contents'
+import Main from '../components/Main'
 import Footer from '../components/Footer'
-import Headline from '../components/Headline'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  const handleClick = () => {
-    alert("clicked now!!");
-  }
 
   return (
     <div className={styles.container}>
@@ -18,12 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Headline page="index" onClick={handleClick}>
-          <code className={styles.code}>pages/index.js</code>
-        </Headline>
-        <Contents />
-      </main>
+      <Main page="index" onClick={() => alert("clicked now!!")} />
 
       <Footer />
     </div>
