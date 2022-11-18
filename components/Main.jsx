@@ -2,14 +2,14 @@ import React from 'react'
 import Headline from './Headline'
 import Contents from './Contents'
 
-import styles from '../styles/Home.module.css'
+import classes from './Main.module.css'
 
 const Main = (props) => {
 
   return (
-    <main className={styles.main}>
+    <main className={classes.main}>
         <Headline page={props.page} onClick={props.onClick}>
-            <code className={styles.code}>pages/{props.page}.js</code>
+            <code className={classes.code}>pages/{props.page}.js</code>
         </Headline>
         <Contents />
     </main>
