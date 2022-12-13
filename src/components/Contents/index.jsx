@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './Contents.module.css'
+import classes from 'src/components/Contents/Contents.module.css'
 
 const ITEMS = [
   {

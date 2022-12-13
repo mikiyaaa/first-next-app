@@ -1,8 +1,8 @@
 import React from 'react'
-import Headline from './Headline'
-import Contents from './Contents'
+import Contents from 'src/components/Contents'
+import Headline from 'src/components/Headline'
 
-import classes from './Main.module.css'
+import classes from 'src/components/Main/Main.module.css'
 
 const Main = (props) => {
 
